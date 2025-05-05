@@ -50,20 +50,25 @@ ul {
   font-weight: 500;
   transition: 0.3s;
 }
+
 .btn-primary {
   /* background-color: var(--primary); */
   color: var(--on-primary);
 }
+
 .btn-primary:hover {
   background-color: var(--on-primary);
   color: var(--primary);
 }
+
 .btn-secondary {
-  background-color: var(--secondary);
+  background-color: var(--border);
   color: var(--on-secondary);
 }
+
 .btn-secondary:hover {
-  background-color: var(--dark-secondary);
+  background-color: var(--opaque-light);
+  color: var(--primary);
 }
 
 .card {
@@ -78,42 +83,48 @@ ul {
   margin-inline: auto;
   transition: 0.3s linear;
 }
+
 .card:hover {
   transform: translateY(-5px);
 }
+
 .card-picture {
   display: inline-block;
   border-radius: inherit;
   width: inherit;
 }
+
 .card-picture img {
   width: inherit;
   border-top-right-radius: inherit;
   border-top-left-radius: inherit;
   object-fit: cover;
 }
+
 .card-body {
   padding: 20px;
   color: var(--on-secondary);
   text-wrap-style: pretty;
 }
+
 .card-title {
   font-size: 1.8rem;
   color: var(--on-primary);
   margin-bottom: 15px;
 }
+
 .card-description {
   margin-bottom: 20px;
 }
+
 .card-sub {
   margin-bottom: 10px;
 }
+
 .highlight {
-  background-image: linear-gradient(
-    to right,
-    var(--highlight-start),
-    var(--highlight-end)
-  );
+  background-image: linear-gradient(to right,
+      var(--highlight-start),
+      var(--highlight-end));
   background-clip: text;
   color: transparent;
 }
@@ -142,6 +153,7 @@ nav {
   backdrop-filter: blur(5px) saturate(180%);
   -webkit-backdrop-filter: blur(1px) saturate(180%);
 }
+
 nav .nav-container {
   max-width: var(--max-width);
   margin-inline: auto;
@@ -149,13 +161,12 @@ nav .nav-container {
   justify-content: space-between;
   align-items: center;
 }
+
 nav .brand {
   font-size: 2rem;
-  background-image: linear-gradient(
-    to right,
-    var(--brand-gradient-start),
-    var(--brand-gradient-end)
-  );
+  background-image: linear-gradient(to right,
+      var(--brand-gradient-start),
+      var(--brand-gradient-end));
   background-clip: text;
   color: transparent;
 }
@@ -170,13 +181,12 @@ header {
   justify-content: center;
   align-items: center;
 }
+
 header .greeter {
   transform: translate(-50%, 20%);
-  background-image: linear-gradient(
-    to right,
-    var(--brand-gradient-start),
-    var(--brand-gradient-end)
-  );
+  background-image: linear-gradient(to right,
+      var(--brand-gradient-start),
+      var(--brand-gradient-end));
   background-clip: text;
   color: transparent;
 }
@@ -194,6 +204,7 @@ section {
   border-radius: 15px;
   box-shadow: var(--box-shadow);
 }
+
 .section-title {
   font-size: 2rem;
   color: var(--title-color);
@@ -202,9 +213,11 @@ section {
   padding-bottom: 10px;
   margin-bottom: 30px;
 }
+
 section:last-child {
   margin-bottom: 30px;
 }
+
 section article {
   padding: 10px;
 }
@@ -220,9 +233,11 @@ footer {
   align-items: center;
   justify-content: space-between;
 }
+
 footer .contact-details li {
   margin: 0 10px;
 }
+
 footer .contact-details svg {
   height: 40px;
   fill: var(--on-primary);
@@ -231,6 +246,7 @@ footer .contact-details svg {
   border-radius: 50%;
   transition: 0.2s linear;
 }
+
 footer .contact-details svg:hover {
   fill: var(--on-secondary);
   transform: scale(1.1);
@@ -240,6 +256,7 @@ footer .contact-details svg:hover {
 #about {
   text-align: left;
 }
+
 #about .about-header {
   margin-bottom: 10px;
   display: flex;
@@ -247,6 +264,7 @@ footer .contact-details svg:hover {
   justify-content: space-between;
   align-items: center;
 }
+
 #about .about-img {
   width: 200px;
   height: 200px;
@@ -255,11 +273,13 @@ footer .contact-details svg:hover {
   border-radius: 10%;
   overflow: hidden;
 }
+
 #about .about-img img {
   object-fit: cover;
   width: 100%;
   height: 100%;
 }
+
 #about .about-body {
   padding: 5px;
 }
@@ -269,16 +289,19 @@ footer .contact-details svg:hover {
   .btn {
     padding: 5px 10px;
   }
+
   .card {
     max-width: 100%;
   }
 
-  header .greeter{
-    transform: translate(-15%,15%);
+  header .greeter {
+    transform: translate(-15%, 15%);
   }
+
   section {
     margin: 40px 10px;
   }
+
   .section-title {
     text-align: center;
     font-size: 1.8rem;
