@@ -11,6 +11,7 @@
   --title-color: #4490db;
   --border:#007bff;
   --primary: #0d1321;
+  --opaque-primary: #0d1321ce;
   --on-primary: #748cab;
   --secondary: #1d2d44;
   --on-secondary: #f0ebd8;
@@ -48,7 +49,7 @@ ul {
   transition: 0.3s;
 }
 .btn-primary {
-  background-color: var(--primary);
+  /* background-color: var(--primary); */
   color: var(--on-primary);
 }
 .btn-primary:hover {
@@ -66,7 +67,7 @@ ul {
 .card {
   background-color: var(--tertiary);
   padding: 2px;
-  border-radius: 10px;
+  border-radius: 15px;
   backdrop-filter: blur(10px) saturate(180%);
   -webkit-backdrop-filter: blur(1px) saturate(180%);
   box-shadow: var(--box-shadow);
@@ -126,8 +127,8 @@ nav {
   z-index: 10;
   width: 100%;
   padding: 5px 15px;
-  background: var(--primary);
-  backdrop-filter: blur(0px) saturate(0%);
+  background: var(--opaque-primary);
+  backdrop-filter: blur(5px) saturate(180%);
   -webkit-backdrop-filter: blur(1px) saturate(180%);
 }
 nav .nav-container {
@@ -151,7 +152,7 @@ nav .brand {
 header {
   height: 100svh;
   width: 100%;
-  background: var(--bg-image) no-repeat center center/cover,var(--opaque-dark);
+  background: var(--bg-image) no-repeat center center/cover,var(--opaque-primary);
   background-blend-mode: overlay;
 }
 
@@ -160,11 +161,11 @@ main {
 }
 
 section {
-  max-width: 600px;
+  max-width: 700px;
   background-color: var(--secondary);
   color: var(--on-secondary);
   margin: 200px auto;
-  padding: 20px;
+  padding: 40px 20px 20px;
   border-radius: 15px;
   box-shadow: var(--box-shadow);
 }
@@ -182,9 +183,10 @@ section article{
 
 footer {
   width: 100%;
-  padding: 5px;
+  padding: 10px;
   background-color: var(--primary);
   color: var(--on-primary);
+  border-top: 3px solid var(--secondary);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -196,6 +198,9 @@ footer .contact-details li{
 footer .contact-details svg {
   height: 40px;
   fill: var(--on-primary);
+  border: 2px solid var(--opaque-light);
+  padding: 2px;
+  border-radius: 50%;
   transition: 0.2s linear;
 }
 footer .contact-details svg:hover {
@@ -210,6 +215,7 @@ footer .contact-details svg:hover {
 #about .about-header{
   margin-bottom: 10px;
   display: flex;
+  flex-direction: column-reverse;
   justify-content: space-between;
   align-items: center;
 }
@@ -240,7 +246,7 @@ footer .contact-details svg:hover {
   }
 
   section {
-    margin: 20px 10px;
+    margin: 40px 10px;
   }
   .section-title {
     text-align: center;
@@ -252,7 +258,6 @@ footer .contact-details svg:hover {
   }
    
   #about .about-header{
-    margin-bottom: 10px;
     flex-direction: column;
   }
 }
