@@ -1,213 +1,109 @@
-<!DOCTYPE HTML>
-<!--
-	Dimension by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+<!DOCTYPE html>
 <html>
 
 <head>
-	<title>Akshay R K</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="stylesheet" href="assets/css/main.css" />
-	<link rel="stylesheet" href="assets/css/secondary.css" />
-	<noscript>
-		<link rel="stylesheet" href="assets/css/noscript.css" />
-	</noscript>
+  <title>Akshay R K</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="/assets/css/styles.css" />
 </head>
 
-<body class="is-preload">
+<body>
+  <!-- Navigation -->
+  <nav>
+    <span class="brand">Akshay R K</span>
+    <ul class="nav-list">
+      <li>
+        <a class="btn btn-primary active" href="index.html#intro">About</a>
+      </li>
+      <li><a class="btn btn-primary" href="projects.html">Projects</a></li>
+      <li>
+        <a href="/assets/akshayResume.docx" target="" download="akshayResume" class="btn btn-primary">
+          <span class="label">Resume</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
 
-	<!-- Wrapper -->
-	<div id="wrapper">
+  <!-- Header -->
+  <header></header>
 
-		<!-- Header -->
-		<!-- HEADER -->
-<header id="header">
-	<div class="content">
-	  <div class="inner">
-		<h1>Akshay R K</h1>
-		<ul class="icons">
-		  <li>
-			<a href="https://www.linkedin.com/in/akshay-r-k-459867224/" target="_blank"
-			   class="icon brands fa-linkedin" title="LinkedIn">
-			  <span class="label">LinkedIn</span>
-			</a>
-		  </li>
-		  <li>
-			<a href="https://github.com/rkakshay02" target="_blank" class="icon brands fa-github" title="GitHub">
-			  <span class="label">GitHub</span>
-			</a>
-		  </li>
-		  <li>
-			<a href="Akshay R K - Resume.docx" target="_blank"
-			   class="icon far fa-file" title="Resume">
-			  <span class="label">Resume</span>
-			</a>
-		  </li>
-		</ul>
-	  </div>
-	</div>
-	<nav>
-	  <ul>
-		<li><a href="#intro">About</a></li>
-		<li><a href="portfolio.html">Portfolio</a></li>
-		<li><a href="Akshay R K - Resume.docx" target="_blank">Resume</a></li>
-	  </ul>
-	</nav>
-  </header>
-  
-  <!-- ABOUT ME SECTION -->
-<article id="intro">
-	<h1 class="major">About Me</h1>
-	<div class="introContainer">
-	  <img class="introPic" src="profile pic new.jpg" alt="Profile Picture">
-	  <div class="aboutMe">
-		<p>
-		  Hi, I'm Akshay — a Machine Learning enthusiast passionate about turning data into meaningful solutions.
-		  I enjoy working on real-world problems where I can apply algorithms, statistics, and code to create smart systems that make a difference.
-		</p>
-		<p>
-		  My core strengths include supervised and unsupervised learning, regression, classification, clustering, and dimensionality reduction.
-		  I work primarily in Python and am comfortable with libraries like scikit-learn, NumPy, and pandas. I approach machine learning not just as a tool,
-		  but as a way to think analytically and solve problems efficiently.
-		</p>
-		<p>
-		  Curiosity, consistency, and clarity guide my learning process. I'm always exploring new concepts, improving my understanding of foundational techniques,
-		  and applying them to practical projects that sharpen both my skills and mindset.
-		</p>
-	  </div>
-	</div>
-  </article>
-  
-  <!-- CSS -->
-  <style>
-	body {
-	  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-	  margin: 0;
-	  padding: 0;
-	  background: url('portfolio background.jpeg') no-repeat center center fixed;
-	  background-size: cover;
-	  color: #333;
-	}
-  
-	header {	
-	  background: #ffffff;
-	  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-	  padding: 20px 0;
-	  text-align: center;
-	}
-  
-	header h1 {
-	  font-size: 2.2rem;
-	  margin-bottom: 10px;
-	  color: #2c3e50;
-	}
-  
-	.icons {
-	  list-style: none;
-	  padding: 0;
-	  display: flex;
-	  justify-content: center;
-	  gap: 20px;
-	  margin: 10px 0;
-	}
-  
-	.icons a {
-	  font-size: 1.4rem;
-	  color: #555;
-	  transition: color 0.3s;
-	}
-  
-	.icons a:hover {
-	  color: #0072b1; /* LinkedIn blue-ish */
-	}
-  
-	nav ul {
-	  list-style: none;
-	  display: flex;
-	  justify-content: center;
-	  gap: 30px;
-	  padding: 0;
-	  margin-top: 15px;
-	}
-  
-	nav a {
-	  text-decoration: none;
-	  color: #444;
-	  font-weight: 600;
-	  transition: color 0.3s;
-	}
-  
-	nav a:hover {
-	  color: #007bff;
-	}
-  
-	#intro {
-	  padding: 60px 20px;
-	  max-width: 1000px;
-	  margin: auto;
-	  background: #e5d5d5;
-	  border-radius: 10px;
-	  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
-	}
-  
-	#intro .major {
-	  font-size: 2rem;
-	  margin-bottom: 30px;
-	  text-align: center;
-	  color: #000000;
-	}
-  
-	.introContainer {
-	  display: flex;
-	  gap: 30px;
-	  align-items: flex-start;
-	  flex-wrap: wrap;
-	  justify-content: center;
-	}
-  
-	.introPic {
-	  width: 150px;  /* Reduced from original size */
-	  height: 150px; /* Reduced from original size */
-	  border-radius: 50%;
-	  object-fit: cover;
-	  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-	}
-  
-	.aboutMe {
-	  max-width: 600px;
-	  font-size: 1.1rem;
-	  line-height: 1.6;
-	}
-  
-	/* Responsive adjustments */
-	@media (max-width: 768px) {
-	  .introContainer {
-		flex-direction: column;
-		align-items: center;
-	  }
-	  
-	  .introPic {
-		margin-bottom: 20px;
-	  }
-	  
-	  .aboutMe {
-		text-align: center;
-	  }
-	}
-  </style>
+  <!-- Main -->
+  <main>
+    <!-- About Section -->
+    <section class="about">
+      <h2 class="section-title">About Me</h2>
+      <article class="introContainer">
+        <img class="introPic" src="/assets/img/profilePic.jpg" alt="Profile Picture" />
+        <div class="aboutMe">
+          <p>
+            Hi, I'm Akshay — a Machine Learning enthusiast passionate about
+            turning data into meaningful solutions. I enjoy working on
+            real-world problems where I can apply algorithms, statistics, and
+            code to create smart systems that make a difference.
+          </p>
+          <p>
+            My core strengths include supervised and unsupervised learning,
+            regression, classification, clustering, and dimensionality
+            reduction. I work primarily in Python and am comfortable with
+            libraries like scikit-learn, NumPy, and pandas. I approach machine
+            learning not just as a tool, but as a way to think analytically
+            and solve problems efficiently.
+          </p>
+          <p>
+            Curiosity, consistency, and clarity guide my learning process. I'm
+            always exploring new concepts, improving my understanding of
+            foundational techniques, and applying them to practical projects
+            that sharpen both my skills and mindset.
+          </p>
+        </div>
+      </article>
+    </section>
 
-	</div> <!-- End wrapper -->
+    <!-- Projects Section -->
+    <section class="projects">
+      <h2 class="section-title">Projects</h2>
+      <article class="card">
+        <picture class="card-picture">
+          <img src="/assets/img/movieApp.jpg" alt="" />
+        </picture>
+        <div class="card-body">
+          <h3 class="card-title">Movie Recommendation System</h3>
+          <p class="card-description">
+            A content-based movie recommendation system that uses cosine
+            similarity to suggest films based on a user's preferences. The
+            system analyzes movie features like genre, cast, director, and
+            keywords to recommend similar movies.
+          </p>
+          <p class="tech-stack">
+            <strong>Technologies used:</strong> Python, Pandas, NumPy,
+            Scikit-learn (for cosine similarity calculations), TMDB API for
+            movie data, and Streamlit for a simple user interface.
+          </p>
+          <a href="https://github.com/rkakshay02/movie-recommendation-system" target="_blank"
+            class="btn btn-secondary">View Code</a>
+        </div>
+      </article>
+    </section>
+  </main>
 
-	<!-- Scripts -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/browser.min.js"></script>
-	<script src="assets/js/breakpoints.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/main.js"></script>
-
+  <!-- Footer -->
+  <footer>
+    <ul class="nav-list contact-details">
+      <li>
+        <a href="https://www.linkedin.com/in/akshay-r-k-459867224/" target="_blank" class="icon brands fa-linkedin"
+          title="LinkedIn">
+          <span class="label">LinkedIn</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/rkakshay02" target="_blank" class="icon brands fa-github" title="GitHub">
+          <span class="label">GitHub</span>
+        </a>
+      </li>
+    </ul>
+    <p class="copyright-text">&copy; 2025, Akshay R K</p>
+  </footer>
 </body>
 
 </html>
