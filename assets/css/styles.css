@@ -122,9 +122,11 @@ ul {
 }
 
 .highlight {
-  background-image: linear-gradient(to right,
-      var(--highlight-start),
-      var(--highlight-end));
+  background-image: linear-gradient(
+    to right,
+    var(--highlight-start),
+    var(--highlight-end)
+  );
   background-clip: text;
   color: transparent;
 }
@@ -164,9 +166,11 @@ nav .nav-container {
 
 nav .brand {
   font-size: 2rem;
-  background-image: linear-gradient(to right,
-      var(--brand-gradient-start),
-      var(--brand-gradient-end));
+  background-image: linear-gradient(
+    to right,
+    var(--brand-gradient-start),
+    var(--brand-gradient-end)
+  );
   background-clip: text;
   color: transparent;
 }
@@ -184,9 +188,11 @@ header {
 
 header .greeter {
   transform: translate(-50%, 20%);
-  background-image: linear-gradient(to right,
-      var(--brand-gradient-start),
-      var(--brand-gradient-end));
+  background-image: linear-gradient(
+    to right,
+    var(--brand-gradient-start),
+    var(--brand-gradient-end)
+  );
   background-clip: text;
   color: transparent;
 }
@@ -294,12 +300,24 @@ footer .contact-details svg:hover {
     max-width: 100%;
   }
 
+  .card-title {
+    font-size: 1.3rem;
+  }
+
+  header {
+    height: 60vh;
+    margin-bottom: 10vh;
+    background-position: 70% center;
+  }
+
   header .greeter {
-    transform: translate(-15%, 15%);
+    transform: translate(-5%, 15%);
   }
 
   section {
-    margin: 40px 10px;
+    margin: 40px 5px;
+    padding: 15px 5px;
+    height: fit-content;
   }
 
   .section-title {
@@ -307,8 +325,16 @@ footer .contact-details svg:hover {
     font-size: 1.8rem;
   }
 
+  nav {
+    padding: 5px;
+  }
+
+  nav .btn {
+    padding: 10px 5px;
+  }
+
   nav .brand {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
   }
 
   #about .about-header {
